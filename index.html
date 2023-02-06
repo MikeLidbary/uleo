@@ -1,0 +1,644 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            },
+            plugins: [
+                require('@tailwindcss/aspect-ratio'),
+            ],
+        }
+    </script>
+    <title>Uleo - Patchwork made with love.</title>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+</head>
+
+<body>
+    <div class="bg-gradient-to-b from-purple-50 to-purple-100">
+        <header class="">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16 lg:h-20">
+                    <div class="flex-shrink-0">
+                        <a href="#" title="" class="flex">
+                            <img class="w-auto h-20"
+                                src="https://res.cloudinary.com/lughayangu/image/upload/v1675654336/uleo/NEW_ARRIVALS_2_xqb0ku.png" alt="logo" />
+                        </a>
+                    </div>
+
+                    <button type="button"
+                        class="inline-flex p-1 text-black transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+                        <!-- Menu open: "hidden", Menu closed: "block" -->
+                        <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <!-- Menu open: "block", Menu closed: "hidden" -->
+                        <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+
+                    <div class="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
+                        <a href="#products" title=""
+                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
+                            Products </a>
+
+                        <a href="#best_selling" title=""
+                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
+                            Best Selling </a>
+
+                        <a href="#reviews" title=""
+                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
+                            Reviews </a>
+
+                        <a href="#faqs" title=""
+                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
+                            FAQs </a>
+
+                        <div class="w-px h-5 bg-black/20"></div>
+
+                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20your%20products" title=""
+                            class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
+                            role="button"> Buy Now </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- <section class="py-10 sm:py-16 lg:py-24">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="relative overflow-hidden bg-white">
+                    <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+                        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+                            <div class="sm:max-w-lg">
+                                <h1 class="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Summer
+                                    styles are finally here</h1>
+                                <p class="mt-4 text-xl text-gray-500">This year, our new summer collection will shelter
+                                    you from the harsh elements of a world that doesn't care if you live or die.</p>
+                            </div>
+                            <div>
+                                <div class="mt-10">
+                                    <div aria-hidden="true"
+                                        class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                                        <div
+                                            class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                                            <div class="flex items-center space-x-6 lg:space-x-8">
+                                                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div
+                                                        class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                </div>
+                                                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                </div>
+                                                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                                                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                                                            alt="" class="h-full w-full object-cover object-center">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#"
+                                        class="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-center font-medium text-white hover:bg-indigo-700">Shop
+                                        Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+        <section class="py-10 bg-white-100 sm:py-16 lg:py-24" id="best_selling">
+            <div class="bg-white">
+                <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                    <h2 class="text-2xl font-bold tracking-tight text-gray-900">Best Selling Products</h2>
+
+                    <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                        <div class="group relative">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img loading="lazy" src="https://res.cloudinary.com/lughayangu/image/upload/v1675614779/uleo/262793355_131536879296321_5293520212341399577_n_kp21tj.jpg"
+                                    alt="Lacoste Chinese collar"
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20lacoste%20chinese%20collar">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            Lacoste Chinese Collar
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Blue|Green|Orange|Grey</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">KES 1200</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img loading="lazy" src="https://res.cloudinary.com/lughayangu/image/upload/v1675614776/uleo/WhatsApp_Image_2023-02-05_at_19.30.53_d3bpqi.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20SU%20Jeans">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            SU Jeans
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Dark Grey</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">KES 1600</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img loading="lazy" src="https://res.cloudinary.com/lughayangu/image/upload/v1675614772/uleo/310875698_5483909845037794_1780858361024613515_n_vjatmy.jpg"
+                                    alt="Front of men&#039;s Basic Tee in black."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20Lacoste%20Stripped%20T-shirts">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                            Lacoste Stripped T-shirts
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black|White|Maroon|Green</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">KES 1200</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img src="https://res.cloudinary.com/lughayangu/image/upload/v1675614772/uleo/WhatsApp_Image_2023-02-05_at_19.29.27_x8nild.jpg"
+                                    alt="M Jeans."
+                                    class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+                            </div>
+                            <div class="mt-4 flex justify-between">
+                                <div>
+                                    <h3 class="text-sm text-gray-700">
+                                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20M%20Jeans">
+                                            <span aria-hidden="true" class="absolute inset-0"></span>
+                                           M Jeans
+                                        </a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Blue</p>
+                                </div>
+                                <p class="text-sm font-medium text-gray-900">KES 1400</p>
+                            </div>
+                        </div>
+                        <!-- More products... -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 bg-white sm:py-16 lg:py-24" id="reviews">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900 pb-5">Reviews</h2>
+                <div class="grid grid-cols-1 gap-6 lg:gap-10 sm:grid-cols-2 md:grid-cols-3">
+                    <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                        <div class="flex flex-col justify-between flex-1 p-8">
+                            <div class="flex-1">
+                                <blockquote>
+                                    <p class="text-lg text-gray-800">“Napenda your quality. Imagine two years na bado iko strong.”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="mt-8">
+                                <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                                <div class="flex items-center">
+                                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675652889/uleo/atito_e9wxih.jpg"
+                                        alt="" />
+                                    <div class="ml-3">
+                                        <p class="text-base font-semibold text-gray-800 truncate">Antony Atito</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                        <div class="flex flex-col justify-between flex-1 p-8">
+                            <div class="flex-1">
+                                <blockquote>
+                                    <p class="text-lg text-gray-800">“Good quality clothes.Uleo has been dressing me for four years now.”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="mt-8">
+                                <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                                <div class="flex items-center">
+                                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675652101/uleo/279778322_147735494455258_7490744083192733274_n_kwmzwy.jpg"
+                                        alt="" />
+                                    <div class="min-w-0 ml-3">
+                                        <p class="text-base font-semibold text-gray-800 truncate">Osango Elii</p>
+                                        <p class="text-base text-gray-500 truncate">CEO Dunlop Sports House Kisumu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                        <div class="flex flex-col justify-between flex-1 p-8">
+                            <div class="flex-1">
+                                <blockquote>
+                                    <p class="text-lg text-gray-800">“Durable and trendy wears, always the place to shop..keep it up 👍”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="mt-8">
+                                <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                                <div class="flex items-center">
+                                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675651894/uleo/hillary_sonxxs.png"
+                                        alt="" />
+                                    <div class="min-w-0 ml-3">
+                                        <p class="text-base font-semibold text-gray-800 truncate">Hillary Omondi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                        <div class="flex flex-col justify-between flex-1 p-8">
+                            <div class="flex-1">
+                                <blockquote>
+                                    <p class="text-lg text-gray-800">“I can testify that quality is indeed majored on with ULEO 👍”
+                                    </p>
+                                </blockquote>
+                            </div>
+
+                            <div class="mt-8">
+                                <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                                <div class="flex items-center">
+                                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675652478/uleo/Tabie_rxdsus.png"
+                                        alt="" />
+                                    <div class="min-w-0 ml-3">
+                                        <p class="text-base font-semibold text-gray-800 truncate">Tabie Otieno</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                        <div class="flex flex-col justify-between flex-1 p-8">
+                            <div class="flex-1">
+                                <blockquote>
+                                    <p class="text-lg text-gray-800">“They are fast and reliable in serving there clients,and they sell quality products 👌”
+                                    </p>
+                                </blockquote>
+                            </div>
+
+                            <div class="mt-8">
+                                <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                                <div class="flex items-center">
+                                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675652597/uleo/fostine_vfflin.png"
+                                        alt="" />
+                                    <div class="min-w-0 ml-3">
+                                        <p class="text-base font-semibold text-gray-800 truncate">Fostine Bramwel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                        <div class="flex flex-col justify-between flex-1 p-8">
+                            <div class="flex-1">
+                                <blockquote>
+                                    <p class="text-lg text-gray-800">“"I like Uleo, this is not the first time I have made an online order, and I am very satisfied, the quality is good, the delivery is fast. I liked everything.”</p>
+                                </blockquote>
+                            </div>
+
+                            <div class="mt-8">
+                                <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                                <div class="flex items-center">
+                                    <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675653329/uleo/masese_vgoyy7.png"
+                                        alt="" />
+                                    <div class="min-w-0 ml-3">
+                                        <p class="text-base font-semibold text-gray-800 truncate">Sylvia Mesese</p>
+                                        <p class="text-base text-gray-500 truncate">Businesswoman Kakamega</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 bg-purple sm:py-16 lg:py-24" id="products">
+            <div class="bg-white">
+                <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                    <h2 class="text-2xl font-bold tracking-tight text-gray-900 pb-5">Products</h2>
+
+
+                    <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20Aflemo%20Tshirts" class="group">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img src="https://res.cloudinary.com/lughayangu/image/upload/v1675614772/uleo/291820908_1281661715921965_5541734964056632111_n_meng3z.jpg"
+                                    alt="AFlemo Tshirts."
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75" loading="lazy">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">Aflemo T-shirts</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">KES 1000</p>
+                        </a>
+
+                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20Volume9%20Tshirts" class="group">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img src="https://res.cloudinary.com/lughayangu/image/upload/v1675614772/uleo/297089266_2306886369449475_6042228330871430863_n_ftjyco.jpg"
+                                    alt="Volume 9 T-shirts"
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75" loading="lazy">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">Volume 9 T-shirts</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">KES 1400</p>
+                        </a>
+
+                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20Z%20Jeans" class="group">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img src="https://res.cloudinary.com/lughayangu/image/upload/v1675614771/uleo/WhatsApp_Image_2023-02-05_at_19.29.28_1_wb3vwx.jpg"
+                                    alt="Z Jeans" loading="lazy"
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">Z Jeans</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">KES 1300</p>
+                        </a>
+
+                        <a href="https://wa.me/+254752534943?text=I%20want%20to%20buy%20Vests+%20Sweatpants%20Combo" class="group">
+                            <div
+                                class="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <img src="https://res.cloudinary.com/lughayangu/image/upload/v1675655996/uleo/WhatsApp_Image_2023-02-06_at_06.56.54_owgxg3.jpg"
+                                    alt="Vest sweatpants combo." loading="lazy"
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75">
+                            </div>
+                            <h3 class="mt-4 text-sm text-gray-700">Vest Sweatpants Combo</h3>
+                            <p class="mt-1 text-lg font-medium text-gray-900">KES 2200</p>
+                        </a>
+
+                        <!-- More products... -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 bg-white sm:py-16 lg:py-24" id="faqs">
+            <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Frequently Asked Questions</h2>
+        
+                <div class="flow-root mt-12 sm:mt-16">
+                    <div class="divide-y divide-gray--200 -my-9">
+                        <div class="py-9">
+                            <p class="text-xl font-semibold text-black">Do you do deliveries?</p>
+                            <p class="mt-3 text-base text-gray-600">Yes, we do deliveries all over the country.</p>
+                            <p class="mt-3 text-base text-gray-600">We do free delivery within Kisumu and for orders above KES 5000. We charge a fixed delivery fee of KES 250 for any other type of order.</p>
+                        </div>
+        
+                        <div class="py-9">
+                            <p class="text-xl font-semibold text-black">What payment method do you support?</p>
+                            <p class="mt-3 text-base text-gray-600">MPESA and Bank deposits. Our Mpesa Till no is 851656</p>
+                        </div>
+        
+                        <div class="py-9">
+                            <p class="text-xl font-semibold text-black">How long will it take for an order to arrive</p>
+                            <p class="mt-3 text-base text-gray-600">You should receive your order within 24 hours of placing it. One of our customer support persons will contact you through WhatsApp or phone and share the tracking number and any other details you need to pick up your parcel.</p>
+                        </div>
+                        <div class="py-9">
+                            <p class="text-xl font-semibold text-black">How can I stay up-to-date with new arrivals and promotions?</p>
+                            <p class="mt-3 text-base text-gray-600">We usually post new arrivals and promotions on our Whatsapp status and social media pages. To stay updated, save our phone number to your contact list and follow us on Instagram and Facebook. </p>
+                        </div>
+                        <div class="py-9">
+                            <p class="text-xl font-semibold text-black">How do I place an order on your website?</p>
+                            <p class="mt-3 text-base text-gray-600">Click on the product you want. You'll be redirected to WhatsApp, where one of our customer agents will take your order and guide you through all the other stages. We are still building the website, and as such, we are not yet able to accept payments directly from the website.  </p>
+                        </div>
+                        
+                        <div class="py-9">
+                            <p class="text-xl font-semibold text-black">How do you provide support?</p>
+                            <p class="mt-3 text-base text-gray-600">
+                               Through our official phone number +254752534943. We are available on whatsapp.For any other question, contact us on <a href="https://wa.me/+254752534943?text=I%20have%20a%20question" title="" class="text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">+254752534943</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="py-10 bg-purple-600 sm:pt-16 lg:pt-24">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
+                    <div>
+                        <p class="text-base text-black-500">Company</p>
+
+                        <ul class="mt-8 space-y-4">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    About </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Features </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Works </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Career </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-base text-black-500">Help</p>
+
+                        <ul class="mt-8 space-y-4">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Customer Support </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Delivery Details </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-base text-black-500">Resources</p>
+
+                        <ul class="mt-8 space-y-4">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Free eBooks </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Development Tutorial </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    How to - Blog </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    YouTube Playlist </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-basetext-black-500">Extra Links</p>
+
+                        <ul class="mt-8 space-y-4">
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Customer Support </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Delivery Details </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#" title=""
+                                    class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                                    Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="mt-16 mb-10 border-white-800" />
+
+                <div class="flex flex-wrap items-center justify-between">
+                    <img class="h-20 auto md:order-1"
+                        src="https://res.cloudinary.com/lughayangu/image/upload/v1675654336/uleo/NEW_ARRIVALS_2_xqb0ku.png" alt="logo" />
+
+                    <ul class="flex items-center space-x-3 md:order-3">
+                        <li>
+                            <a href="https://tiktok.com/@uleoafrica" title=""
+                                class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                                <svg class="w-4 h-4" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg"><path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"/></svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://web.facebook.com/uleocollection" title="facebook"
+                                class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/uleo_collection/?hl=en" title="Instagram"
+                                class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+                                    </path>
+                                    <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                                    <path
+                                        d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">© Copyright
+                        2023, All Rights Reserved by Uleo</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
